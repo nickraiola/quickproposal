@@ -29,7 +29,7 @@ function Spinner() {
   );
 }
 
-function FieldLabel({ children, required }: { children: React.ReactNode; required?: boolean }) {
+ function FieldLabel({ children, required }) {
   return (
     <label style={{
       display: "block",
@@ -46,7 +46,7 @@ function FieldLabel({ children, required }: { children: React.ReactNode; require
   );
 }
 
- function Input({ value, onChange, placeholder, multiline, rows = 4 }: { value: string; onChange: (v: string) => void; placeholder?: string; multiline?: boolean; rows?: number }) {
+ function Input({ value, onChange, placeholder, multiline, rows = 4 }) {
   const base = {
     width: "100%",
     background: "rgba(255,255,255,0.04)",
