@@ -46,7 +46,7 @@ function FieldLabel({ children, required }: { children: React.ReactNode; require
   );
 }
 
-function Input({ value, onChange, placeholder, multiline, rows = 4 }) {
+ function Input({ value, onChange, placeholder, multiline, rows = 4 }: { value: string; onChange: (v: string) => void; placeholder?: string; multiline?: boolean; rows?: number }) {
   const base = {
     width: "100%",
     background: "rgba(255,255,255,0.04)",
