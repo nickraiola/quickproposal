@@ -29,7 +29,7 @@ function Spinner() {
   );
 }
 
-function FieldLabel({ children, required }) {
+function FieldLabel({ children, required }: { children: React.ReactNode; required?: boolean }) {
   return (
     <label style={{
       display: "block",
